@@ -184,8 +184,8 @@ export const projects = [
     image: githubdetLogo,
     tags: ["HTML", "CSS", "JavaScript", "React JS", "API"],
     github:
-      "https://https://github.com/HuzaizKhalid/GitHub-Profile-Search-App-Using-React-JS",
-    webapp: "https://https://git-hub-profile-search-app-using-re.vercel.app/",
+      "https://github.com/HuzaizKhalid/GitHub-Profile-Search-App-Using-React-JS",
+    webapp: "https://git-hub-profile-search-app-using-re.vercel.app/",
   },
   {
     id: 1,
