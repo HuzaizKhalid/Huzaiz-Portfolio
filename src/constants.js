@@ -104,6 +104,27 @@ export const SkillsInfo = [
 export const experiences = [
   {
     id: 0,
+    // img: infoetecLogo,
+    role: "Full Stack Developer",
+    company: "Infoetec",
+    location: "Lahore (Hybrid)",
+    date: "May 2025 – Present",
+    desc: "Collaborate closely with cross-functional teams including designers, backend engineers, frontend developers, and project managers to deliver robust web applications. Engage in Scrum meetings to ensure effective planning and timely delivery of features. Use version control systems like Bitbucket to manage collaborative development and workflow. Review code, fix bugs, and improve overall application performance.",
+    skills: [
+      "JavaScript",
+      "React JS",
+      "Node JS",
+      "MongoDB",
+      "Bitbucket",
+      "Tailwind CSS",
+      "Express JS",
+      "REST APIs",
+      "Scrum",
+    ],
+  },
+
+  {
+    id: 1,
     // img: webverseLogo,
     role: "Fullstack Developer Intern",
     company: "Disruptive AI",
@@ -123,16 +144,16 @@ export const experiences = [
     ],
   },
   {
-    id: 1,
+    id: 2,
     // img: agcLogo,
     role: "MERN Stack Fellow",
     company: "Byetwise Limited",
     date: "May 2024 - June 2024",
-    desc: "Contributed to innovative projects as a Fullstack Engineer, leading both frontend and backend development using technologies such as HTML, CSS, JavaScript, React.js, Node.js, Express.js, and Mongodb. Worked closely with the team to deliver responsive, high-performance web applications and improve user experience through seamless integration of various technologies.",
+    desc: "Selected out of a pool of 2,300+ applicants for the Bytewise Limited Fellowship program 2024.Awarded Best Intern at Bytewise Limited Fellowship for outstanding performance in the MERN Stack track by successfully completing all assigned projects with excellence and dedication.Collaborating with industry experts and mentors to ensure best practices and high-quality code development.",
     skills: ["ReactJS", "Redux", "JavaScript", "Tailwind CSS", "HTML", "CSS"],
   },
   {
-    id: 2,
+    id: 3,
     // img: newtonschoolLogo,
     role: "Freelancer",
     company: "Fiverr Upwork",
