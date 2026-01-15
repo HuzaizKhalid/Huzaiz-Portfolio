@@ -13,6 +13,7 @@ import materialuiLogo from "./assets/tech_logo/materialui.png";
 import bootstrapLogo from "./assets/tech_logo/bootstrap.png";
 import springbootLogo from "./assets/tech_logo/springboot.png";
 import nodejsLogo from "./assets/tech_logo/nodejs.png";
+import nestjsLogo from "./assets/tech_logo/nestjs.png";
 import expressjsLogo from "./assets/tech_logo/express.png";
 import mysqlLogo from "./assets/tech_logo/mysql.png";
 import mongodbLogo from "./assets/tech_logo/mongodb.png";
@@ -32,6 +33,12 @@ import netlifyLogo from "./assets/tech_logo/netlify.png";
 import vercelLogo from "./assets/tech_logo/vercel.png";
 import postgreLogo from "./assets/tech_logo/postgre.png";
 import csharpLogo from "./assets/tech_logo/csharp.png";
+import dockerLogo from "./assets/tech_logo/docker.png";
+import awsLogo from "./assets/tech_logo/aws.png";
+import cyberifyLogo from "./assets/company_logo/cyberify_logo.png";
+import infoetecLogo from "./assets/company_logo/infoetec_logo.jpg";
+import disruptiveLogo from "./assets/company_logo/disruptiveai_logo.jpg";
+import bytewiseLogo from "./assets/company_logo/bytewise_logo.jpg";
 
 // Experience Section Logo's
 import webverseLogo from "./assets/company_logo/webverse_logo.png";
@@ -62,6 +69,7 @@ export const SkillsInfo = [
       { name: "CSS", logo: cssLogo },
       { name: "JavaScript", logo: javascriptLogo },
       { name: "React JS", logo: reactjsLogo },
+      { name: "Angular", logo: angularLogo },
       { name: "Redux", logo: reduxLogo },
       { name: "Tailwind CSS", logo: tailwindcssLogo },
       { name: "Bootstrap", logo: bootstrapLogo },
@@ -72,6 +80,7 @@ export const SkillsInfo = [
     skills: [
       { name: "Node JS", logo: nodejsLogo },
       { name: "Express JS", logo: expressjsLogo },
+      { name: "Nest JS", logo: nestjsLogo },
       { name: "MySQL", logo: mysqlLogo },
       { name: "MongoDB", logo: mongodbLogo },
       { name: "Firebase", logo: firebaseLogo },
@@ -82,8 +91,10 @@ export const SkillsInfo = [
     title: "Tools",
     skills: [
       { name: "Git", logo: gitLogo },
-      { name: "GitHub", logo: githubLogo },
-      { name: "VS Code", logo: vscodeLogo },
+      { name: "Docker", logo: dockerLogo },
+      { name: "AWS", logo: awsLogo },
+      // { name: "GitHub", logo: githubLogo },
+      // { name: "VS Code", logo: vscodeLogo },
       { name: "Postman", logo: postmanLogo },
       { name: "Compass", logo: mcLogo },
       { name: "Vercel", logo: vercelLogo },
@@ -104,11 +115,35 @@ export const SkillsInfo = [
 export const experiences = [
   {
     id: 0,
+    img: cyberifyLogo,
+    role: "Software Engineer",
+    company: "Cyberify",
+    location: "Multan",
+    date: "October 2025 - Present",
+    desc: "Working as a Software Engineer at Cyberify, developing and maintaining scalable full-stack applications. Responsible for building modern user interfaces using React and Angular, designing robust backend services with Node.js, NestJS, and Express, and integrating RESTful APIs. Actively working with Kafka for event-driven communication, PostgreSQL and MongoDB for data management, and Docker for containerization. Collaborating closely with cross-functional teams to deliver high-quality, performance-optimized solutions following best coding practices.",
+    skills: [
+      "TypeScript",
+      "React JS",
+      "Node JS",
+      "Nest JS",
+      "Angular JS",
+      "Kafka",
+      "PostgreSQL",
+      "MongoDB",
+      "Tailwind CSS",
+      "Express JS",
+      "REST APIs",
+      "Docker",
+    ],
+  },
+  {
+    id: 1,
     // img: infoetecLogo,
+    img: infoetecLogo,
     role: "Full Stack Developer",
     company: "Infoetec",
     location: "Lahore (Hybrid)",
-    date: "May 2025 – Present",
+    date: "June 2025 – August 2025",
     desc: "Collaborate closely with cross-functional teams including designers, backend engineers, frontend developers, and project managers to deliver robust web applications. Engage in Scrum meetings to ensure effective planning and timely delivery of features. Use version control systems like Bitbucket to manage collaborative development and workflow. Review code, fix bugs, and improve overall application performance.",
     skills: [
       "JavaScript",
@@ -124,8 +159,8 @@ export const experiences = [
   },
 
   {
-    id: 1,
-    // img: webverseLogo,
+    id: 2,
+    img: disruptiveLogo,
     role: "Fullstack Developer Intern",
     company: "Disruptive AI",
     date: "Sep 2024 - Nov 2024",
@@ -144,35 +179,36 @@ export const experiences = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     // img: agcLogo,
+    img: bytewiseLogo,
     role: "MERN Stack Fellow",
     company: "Byetwise Limited",
     date: "May 2024 - June 2024",
     desc: "Selected out of a pool of 2,300+ applicants for the Bytewise Limited Fellowship program 2024.Awarded Best Intern at Bytewise Limited Fellowship for outstanding performance in the MERN Stack track by successfully completing all assigned projects with excellence and dedication.Collaborating with industry experts and mentors to ensure best practices and high-quality code development.",
     skills: ["ReactJS", "Redux", "JavaScript", "Tailwind CSS", "HTML", "CSS"],
   },
-  {
-    id: 3,
-    // img: newtonschoolLogo,
-    role: "Freelancer",
-    company: "Fiverr Upwork",
-    date: "June 2022 - Present",
-    desc: "Worked with over 60+ projects of over 45+ unique clients over the past 2 years with the outstanding rating of 4.8 on Fiverr. Have secured 5 jobs on Upwork this year with outstanding 100% success score.",
-    skills: [
-      "HTML",
-      "CSS",
-      "Javascript",
-      "Bootstrap",
-      "Figma",
-      "Tailwind CSS",
-      " React JS",
-      "Node JS",
-      "Express JS",
-      "MongoDB",
-      "MySQL",
-    ],
-  },
+  // {
+  //   id: 4,
+  //   // img: newtonschoolLogo,
+  //   role: "Freelancer",
+  //   company: "Fiverr Upwork",
+  //   date: "June 2022 - Present",
+  //   desc: "Worked with over 60+ projects of over 45+ unique clients over the past 2 years with the outstanding rating of 4.8 on Fiverr. Have secured 5 jobs on Upwork this year with outstanding 100% success score.",
+  //   skills: [
+  //     "HTML",
+  //     "CSS",
+  //     "Javascript",
+  //     "Bootstrap",
+  //     "Figma",
+  //     "Tailwind CSS",
+  //     " React JS",
+  //     "Node JS",
+  //     "Express JS",
+  //     "MongoDB",
+  //     "MySQL",
+  //   ],
+  // },
 ];
 
 export const education = [
@@ -181,7 +217,6 @@ export const education = [
     img: PIEAS,
     school: "PIEAS University, Islamabad",
     date: "October 2021 - June 2025",
-    // grade: "7.81 CGPA",
     desc: "I have completed my Bachelor's degree (MCA) in Computer Science from PIEAS University, Mathura. During my studies, I gained a solid foundation in computer science principles and practices. My coursework included advanced topics such as Data Structures, Algorithms, Web Development, Database Management Systems, and Software Engineering. I also had the opportunity to work on various projects that allowed me to apply theoretical knowledge to practical scenarios, enhancing my problem-solving skills and technical expertise.",
     degree: "Bachelor's of Computer Science - BSCS",
   },
