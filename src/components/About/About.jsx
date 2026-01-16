@@ -49,13 +49,14 @@ const About = () => {
           </p>
           {/* Resume Button */}
           <a
-            href="https://drive.google.com/uc?export=download&id=18isXyYwgtxi3tuP8POq9V1najzuHcaMH"
+            href="https://drive.google.com/uc?export=download&id=1NDPCJf8GgvfL6ii0paZnU7j1MpijE4qA"
+            
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
             style={{
               background: "linear-gradient(90deg, #8245ec, #a855f7)",
-              boxShadow: "0 0 2px #8245ec, 0 0 2px #8245ec, 0 0 40px #8245ec",
+              // boxShadow: "0 0 2px #8245ec, 0 0 2px #8245ec, 0 0 40px #8245ec",
             }}
           >
             DOWNLOAD CV

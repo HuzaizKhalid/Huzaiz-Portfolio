@@ -57,7 +57,7 @@ const Footer = () => {
             },
             {
               icon: <FaInstagram />,
-              link: "https://www.instagram.com/huzaizkhalid04/",
+              link: "https://www.instagram.com/huzaizkhalid.dev/",
             },
             {
               icon: <FaGithub />,

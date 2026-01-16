@@ -7,6 +7,8 @@ import reactjsLogo from "./assets/tech_logo/reactjs.png";
 import angularLogo from "./assets/tech_logo/angular.png";
 import reduxLogo from "./assets/tech_logo/redux.png";
 import nextjsLogo from "./assets/tech_logo/nextjs.png";
+import graphqlLogo from "./assets/tech_logo/graphql_logo.png";
+import kafkaLogo from "./assets/tech_logo/kafka_logo.png";
 import tailwindcssLogo from "./assets/tech_logo/tailwindcss.png";
 import gsapLogo from "./assets/tech_logo/gsap.png";
 import materialuiLogo from "./assets/tech_logo/materialui.png";
@@ -39,6 +41,7 @@ import cyberifyLogo from "./assets/company_logo/cyberify_logo.png";
 import infoetecLogo from "./assets/company_logo/infoetec_logo.jpg";
 import disruptiveLogo from "./assets/company_logo/disruptiveai_logo.jpg";
 import bytewiseLogo from "./assets/company_logo/bytewise_logo.jpg";
+import redisLogo from "./assets/tech_logo/redis_log.png";
 
 // Experience Section Logo's
 import webverseLogo from "./assets/company_logo/webverse_logo.png";
@@ -69,12 +72,13 @@ export const SkillsInfo = [
     skills: [
       { name: "HTML", logo: htmlLogo },
       { name: "CSS", logo: cssLogo },
-      { name: "JavaScript", logo: javascriptLogo },
+      // { name: "JavaScript", logo: javascriptLogo },
       { name: "React JS", logo: reactjsLogo },
       { name: "Angular", logo: angularLogo },
       { name: "Redux", logo: reduxLogo },
       { name: "Tailwind CSS", logo: tailwindcssLogo },
       { name: "Bootstrap", logo: bootstrapLogo },
+      {name:"Sass",logo:sassLogo}
     ],
   },
   {
@@ -83,12 +87,46 @@ export const SkillsInfo = [
       { name: "Node JS", logo: nodejsLogo },
       { name: "Express JS", logo: expressjsLogo },
       { name: "Nest JS", logo: nestjsLogo },
-      { name: "MySQL", logo: mysqlLogo },
-      { name: "MongoDB", logo: mongodbLogo },
-      { name: "Firebase", logo: firebaseLogo },
-      { name: "PostgreSQL", logo: postgreLogo },
+      {name:"GraphQL",logo:graphqlLogo},
+      {name:"Kafka",logo:kafkaLogo},
+      // { name: "MySQL", logo: mysqlLogo },
+      // { name: "MongoDB", logo: mongodbLogo },
+      // { name: "Firebase", logo: firebaseLogo },
+      // { name: "PostgreSQL", logo: postgreLogo },
     ],
   },
+  {
+    title:"Databases",
+    skills:[
+      {name:"MySQL",logo:mysqlLogo},
+      {name:"MongoDB",logo:mongodbLogo},
+      {name:"Firebase",logo:firebaseLogo},
+      {name:"PostgreSQL",logo:postgreLogo},
+      {name:"Redis",logo:redisLogo}
+    ]
+  },
+  {
+    title: "Hosting/SaaS",
+    skills: [
+      { name: "Vercel", logo: vercelLogo },
+      { name: "Netlify", logo: netlifyLogo },
+      { name: "Docker", logo: dockerLogo },
+      { name: "AWS", logo: awsLogo },
+      // { name: "Firebase", logo: firebaseLogo },
+    ],
+  },
+
+  {
+    title: "Languages",
+    skills: [
+      { name: "C", logo: cLogo },
+      { name: "C++", logo: cppLogo },
+      { name: "Python", logo: pythonLogo },
+      { name: "JavaScript", logo: javascriptLogo },
+      {name:"TypeScript",logo:typescriptLogo}
+    ],
+  },
+ 
   {
     title: "Tools",
     skills: [
@@ -101,27 +139,7 @@ export const SkillsInfo = [
 
     ],
   },
-
-  {
-    title: "Languages",
-    skills: [
-      { name: "C", logo: cLogo },
-      { name: "C++", logo: cppLogo },
-      { name: "Python", logo: pythonLogo },
-      { name: "JavaScript", logo: javascriptLogo },
-    ],
-  },
-  {
-    title: "Hosting/SaaS",
-    skills: [
-      { name: "Vercel", logo: vercelLogo },
-      { name: "Netlify", logo: netlifyLogo },
-      { name: "Docker", logo: dockerLogo },
-      { name: "AWS", logo: awsLogo },
-      { name: "Firebase", logo: firebaseLogo },
-    ],
-
-  }
+  
 ];
 
 export const experiences = [
@@ -146,6 +164,10 @@ export const experiences = [
       "Express JS",
       "REST APIs",
       "Docker",
+      "Twilio",
+      "Mailgun",
+      "BullMQ",
+      "Redis",
     ],
   },
   {
@@ -167,6 +189,7 @@ export const experiences = [
       "Express JS",
       "REST APIs",
       "Scrum",
+      "Swagger"
     ],
   },
 
@@ -224,6 +247,7 @@ export const experiences = [
 ];
 
 export const education = [
+  
   {
     id: 0,
     img: PIEAS,
@@ -244,6 +268,23 @@ export const education = [
 ];
 
 export const projects = [
+    {
+    id: 5,
+    title: "AlChemist AI Official Web App",
+    description:
+      "Alchemist AI is a sustainable AI-powered search platform that helps users get accurate answers while tracking the environmental impact of each query. 🌱 For every new member, a tree is planted, supporting the mission to grow 1 million trees. Users can set daily resource limits, compare energy-efficient AI models, and promote greener AI usage—all in one place. ",
+    image: alchemistaLogo,
+tags: [
+  "Next.js",
+  "TypeScript",
+  "Tailwind CSS",
+  "OpenAI API",
+  "MongoDB",
+  "Server-Side Rendering",
+],
+    github: "https://github.com/HuzaizKhalid/Ai-Alchemist-Official",
+    webapp: "https://www.alchemistaiofficial.com/",
+  },
   {
     id: 0,
     title: "GitHub Profile Detective",
@@ -259,9 +300,9 @@ export const projects = [
     id: 1,
     title: "Event Management Web App (Evnity)",
     description:
-      "A visually appealing and interactive event management web application built with MERN Stack.The website is fully responsive, ensuring a great user experience across all devices.",
+      "Evnity is a modern event management platform designed specifically for the Pakistani market. It connects three types of users where Customers can find and book events, hire services, and rent resources, Providers can list and manage events, services, and resources for rental, Admins can oversee platform operations, verify providers, and handle disputes",
     image: evnityLogo,
-    tags: ["React JS", "Node.js", "MongoDB", "Express", "Tailwind CSS"],
+    tags: ["React JS", "Node.js", "MongoDB", "Express", "Tailwind CSS","Stripe","JWT","Cloudinary","Lucid React"],
     github:
       "https://github.com/HuzaizKhalid/Evnity/tree/main",
     webapp: "https://evnity.vercel.app/",
@@ -309,14 +350,5 @@ export const projects = [
     github: "https://https://github.com/HuzaizKhalid/ImageSearchApp",
     webapp: "https://image-search-app-blue-eta.vercel.app",
   },
-  {
-    id: 5,
-    title: "AlChemist AI Official Web App",
-    description:
-      "A visually appealing and interactive landing page built with HTML, CSS, JS. ",
-    image: alchemistaLogo,
-    tags: ["Next.js", "Tailwind CSS", "Javascript", "API", "Figma"],
-    github: "https://github.com/HuzaizKhalid/Ai-Alchemist-Official",
-    webapp: "https://www.alchemistaiofficial.com/",
-  },
+
 ];
