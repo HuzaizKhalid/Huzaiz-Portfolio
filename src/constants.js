@@ -52,14 +52,16 @@ import vpsLogo from "./assets/education_logo/vps_logo.png";
 
 // Project Section Logo's
 import githubdetLogo from "./assets/work_logo/github_det.png";
-import animated_portfolio from "./assets/work_logo/animated_portfolio.png";
+// import animated_portfolio from "./assets/work_logo/animated_portfolio.png";
+import evnityLogo from "./assets/work_logo/evnity_logo.png";
 import movierecLogo from "./assets/work_logo/movie_rec.png";
 import taskremLogo from "./assets/work_logo/task_rem.png";
 import npmLogo from "./assets/work_logo/npm.png";
 import webverLogo from "./assets/work_logo/web_dig.png";
 import careerConnect from "./assets/work_logo/careerConnect.png";
 import imagesearchLogo from "./assets/work_logo/image_search.png";
-import coderGirl from "./assets/work_logo/coderGirl.png";
+import alchemistaLogo from "./assets/work_logo/alchemist_ai_official.png";
+// import coderGirl from "./assets/work_logo/coderGirl.png";
 
 export const SkillsInfo = [
   {
@@ -91,16 +93,15 @@ export const SkillsInfo = [
     title: "Tools",
     skills: [
       { name: "Git", logo: gitLogo },
-      { name: "Docker", logo: dockerLogo },
-      { name: "AWS", logo: awsLogo },
+
       // { name: "GitHub", logo: githubLogo },
       // { name: "VS Code", logo: vscodeLogo },
       { name: "Postman", logo: postmanLogo },
       { name: "Compass", logo: mcLogo },
-      { name: "Vercel", logo: vercelLogo },
-      { name: "Netlify", logo: netlifyLogo },
+
     ],
   },
+
   {
     title: "Languages",
     skills: [
@@ -110,6 +111,17 @@ export const SkillsInfo = [
       { name: "JavaScript", logo: javascriptLogo },
     ],
   },
+  {
+    title: "Hosting/SaaS",
+    skills: [
+      { name: "Vercel", logo: vercelLogo },
+      { name: "Netlify", logo: netlifyLogo },
+      { name: "Docker", logo: dockerLogo },
+      { name: "AWS", logo: awsLogo },
+      { name: "Firebase", logo: firebaseLogo },
+    ],
+
+  }
 ];
 
 export const experiences = [
@@ -245,14 +257,14 @@ export const projects = [
   },
   {
     id: 1,
-    title: "Animated Portfolio Website",
+    title: "Event Management Web App (Evnity)",
     description:
-      "A visually appealing and interactive portfolio website built with HTML, CSS and JavaScript.The website is fully responsive, ensuring a great user experience across all devices.",
-    image: animated_portfolio,
-    tags: ["HTML", "CSS", "JavaScript"],
+      "A visually appealing and interactive event management web application built with MERN Stack.The website is fully responsive, ensuring a great user experience across all devices.",
+    image: evnityLogo,
+    tags: ["React JS", "Node.js", "MongoDB", "Express", "Tailwind CSS"],
     github:
-      "https://https://github.com/HuzaizKhalid/animated-Portfolio-website-html-css-js",
-    webapp: "https://animated-portfolio-website-html-css.vercel.app/",
+      "https://github.com/HuzaizKhalid/Evnity/tree/main",
+    webapp: "https://evnity.vercel.app/",
   },
   {
     id: 2,
@@ -299,12 +311,12 @@ export const projects = [
   },
   {
     id: 5,
-    title: "Stunning Landing Page",
+    title: "AlChemist AI Official Web App",
     description:
       "A visually appealing and interactive landing page built with HTML, CSS, JS. ",
-    image: coderGirl,
-    tags: ["HTML", "CSS", "Javascript"],
-    github: "https://github.com/HuzaizKhalid/CoderGirl-Landing-Page",
-    webapp: "https://https://coder-girl-landing-page.vercel.app/#",
+    image: alchemistaLogo,
+    tags: ["Next.js", "Tailwind CSS", "Javascript", "API", "Figma"],
+    github: "https://github.com/HuzaizKhalid/Ai-Alchemist-Official",
+    webapp: "https://www.alchemistaiofficial.com/",
   },
 ];
