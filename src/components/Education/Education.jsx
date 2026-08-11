@@ -1,7 +1,8 @@
 import React from "react";
-import { education } from "../../constants"; // Import the education data
+import { education as staticEducation } from "../../constants";
 
-const Education = () => {
+const Education = ({ education }) => {
+  const eduList = education || staticEducation;
   return (
     <section
       id="education"
@@ -23,7 +24,7 @@ const Education = () => {
         <div className="absolute sm:left-1/2 left-0 transform -translate-x-1/2 sm:-translate-x-0 w-1 bg-white h-full"></div>
 
         {/* Education Entries */}
-        {education.map((edu, index) => (
+        {eduList.map((edu, index) => (
           <div
             key={edu.id}
             className={`flex flex-col sm:flex-row items-center mb-16 ${index % 2 === 0 ? "sm:justify-start" : "sm:justify-end"

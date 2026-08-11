@@ -1,7 +1,8 @@
 import React from "react";
-import { experiences } from "../../constants"; // Import your data
+import { experiences as staticExperiences } from "../../constants";
 
-const Experience = () => {
+const Experience = ({ experiences }) => {
+  const expList = experiences || staticExperiences;
   return (
     <section
       id="experience"
@@ -23,7 +24,7 @@ const Experience = () => {
         <div className="absolute sm:left-1/2 left-0 transform -translate-x-1/2 sm:-translate-x-0 w-1 bg-white h-full"></div>
 
         {/* Experience Entries */}
-        {experiences.map((experience, index) => (
+        {expList.map((experience, index) => (
           <div
             key={experience.id}
             className={`flex flex-col sm:flex-row items-center mb-16 ${index % 2 === 0 ? "sm:justify-end" : "sm:justify-start"

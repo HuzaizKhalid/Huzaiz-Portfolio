@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { projects } from "../../constants";
+import { projects as staticProjects } from "../../constants";
 
-const Work = () => {
+const Work = ({ projects }) => {
+  const projectList = projects || staticProjects;
   const [selectedProject, setSelectedProject] = useState(null);
 
   const handleOpenModal = (project) => {
@@ -29,7 +30,7 @@ const Work = () => {
 
       {/* Projects Grid */}
       <div className="grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        {projects.map((project) => (
+        {projectList.map((project) => (
           <div
             key={project.id}
             onClick={() => handleOpenModal(project)}

@@ -8,8 +8,11 @@ import Education from "./components/Education/Education";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import BlurBlob from './components/BlurBlob';
+import { usePortfolioData } from "./hooks/usePortfolioData";
 
 const App = () => {
+  const { projects, experience, education, skills, about, loading } = usePortfolioData();
+
   return (
     <div className="bg-[#050414]">
 
@@ -19,13 +22,13 @@ const App = () => {
       
       <div className="relative pt-20">
         <Navbar />
-        <About />
-        <Skills />
-        <Experience />
-        <Work />
-        <Education />
-        <Contact />
-        <Footer />
+        <About about={about} />
+        <Skills skillsInfo={skills} />
+        <Experience experiences={experience} />
+        <Work projects={projects} />
+        <Education education={education} />
+        <Contact about={about} />
+        <Footer about={about} />
       </div>
 
     </div>

@@ -1,9 +1,11 @@
 // src/components/Skills/Skills.jsx
 import React from "react";
-import { SkillsInfo } from "../../constants";
+import { SkillsInfo as staticSkillsInfo } from "../../constants";
 import Tilt from "react-parallax-tilt";
 
-const Skills = () => (
+const Skills = ({ skillsInfo }) => {
+  const categories = skillsInfo || staticSkillsInfo;
+  return (
   <section
     id="skills"
     className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[20vw] font-sans bg-skills-gradient clip-path-custom"
@@ -19,7 +21,7 @@ const Skills = () => (
 
     {/* Skill Categories */}
     <div className="flex flex-wrap gap-1 lg:gap-5 py-10 justify-between">
-      {SkillsInfo.map((category) => (
+      {categories.map((category) => (
         <div
           key={category.title}
           className="bg-gray-900 backdrop-blur-md px-6 sm:px-10 py-8 sm:py-6 mb-10 w-full sm:w-[48%] rounded-2xl border border-white 
@@ -61,6 +63,7 @@ const Skills = () => (
       ))}
     </div>
   </section>
-);
+  );
+};
 
 export default Skills;
