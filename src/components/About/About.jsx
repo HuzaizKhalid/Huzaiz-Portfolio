@@ -2,6 +2,7 @@ import React from "react";
 import ReactTypingEffect from "react-typing-effect";
 import Tilt from "react-parallax-tilt";
 import staticProfileImage from "../../assets/work_logo/profile_pic.png";
+import { trackResumeDownload } from "../../lib/analytics";
 
 // Static fallback values (used when Supabase has no about data yet)
 const DEFAULTS = {
@@ -85,6 +86,9 @@ const About = ({ about }) => {
             href={data.resumeUrl}
             target="_blank"
             rel="noopener noreferrer"
+            // sendBeacon survives the navigation this click triggers, so the
+            // download is counted without delaying it.
+            onClick={trackResumeDownload}
             className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
             style={{ background: "linear-gradient(90deg, #8245ec, #a855f7)" }}
           >

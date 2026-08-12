@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
@@ -9,9 +9,15 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import BlurBlob from './components/BlurBlob';
 import { usePortfolioData } from "./hooks/usePortfolioData";
+import { trackPageview } from "./lib/analytics";
 
 const App = () => {
   const { projects, experience, education, skills, about, loading } = usePortfolioData();
+
+  // One pageview per session — trackPageview() dedupes internally.
+  useEffect(() => {
+    trackPageview();
+  }, []);
 
   return (
     <div className="bg-[#050414]">

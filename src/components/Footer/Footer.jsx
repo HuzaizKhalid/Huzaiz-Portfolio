@@ -7,6 +7,7 @@ import {
   FaYoutube,
   FaGithub,
 } from "react-icons/fa";
+import { trackContactClick } from "../../lib/analytics";
 
 const Footer = () => {
   // Smooth scroll function
@@ -49,18 +50,22 @@ const Footer = () => {
           {[
             {
               icon: <FaFacebook />,
+              name: "Facebook",
               link: "https://www.facebook.com/huzaiz.khalid.7/",
             },
             {
               icon: <FaLinkedin />,
+              name: "LinkedIn",
               link: "https://www.linkedin.com/in/huzaizkhalidqureshi-2a72b4243/",
             },
             {
               icon: <FaInstagram />,
+              name: "Instagram",
               link: "https://www.instagram.com/huzaizkhalid.dev/",
             },
             {
               icon: <FaGithub />,
+              name: "GitHub",
               link: "https://github.com/HuzaizKhalid",
             },
           ].map((item, index) => (
@@ -69,6 +74,8 @@ const Footer = () => {
               href={item.link}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label={item.name}
+              onClick={() => trackContactClick(item.name)}
               className="text-xl hover:text-purple-500 transition-transform transform hover:scale-110"
             >
               {item.icon}

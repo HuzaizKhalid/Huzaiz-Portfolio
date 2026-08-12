@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import { projects as staticProjects } from "../../constants";
+import { trackProjectClick } from "../../lib/analytics";
 
 const Work = ({ projects }) => {
   const projectList = projects || staticProjects;
   const [selectedProject, setSelectedProject] = useState(null);
 
   const handleOpenModal = (project) => {
+    // Opening the detail modal is the "project clicked" signal.
+    trackProjectClick(project?.title);
     setSelectedProject(project);
   };
 

@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { trackContactClick } from "../../lib/analytics";
 
 const Contact = () => {
   const form = useRef();
@@ -19,6 +20,8 @@ const Contact = () => {
       )
       .then(
         () => {
+          // Counted on success only — a failed send isn't contact intent reached.
+          trackContactClick("Contact form");
           setIsSent(true);
           form.current.reset(); // Reset form fields after sending
           toast.success("Message sent successfully! ✅", {
