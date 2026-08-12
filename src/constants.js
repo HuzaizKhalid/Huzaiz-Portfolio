@@ -218,7 +218,7 @@ export const experiences = [
     // img: agcLogo,
     img: bytewiseLogo,
     role: "MERN Stack Fellow",
-    company: "Byetwise Limited",
+    company: "Bytewise Limited",
     date: "May 2024 - June 2024",
     desc: "Selected out of a pool of 2,300+ applicants for the Bytewise Limited Fellowship program 2024.Awarded Best Intern at Bytewise Limited Fellowship for outstanding performance in the MERN Stack track by successfully completing all assigned projects with excellence and dedication.Collaborating with industry experts and mentors to ensure best practices and high-quality code development.",
     skills: ["ReactJS", "Redux", "JavaScript", "Tailwind CSS", "HTML", "CSS"],
